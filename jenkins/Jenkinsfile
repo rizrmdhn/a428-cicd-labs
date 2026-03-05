@@ -8,6 +8,7 @@ pipeline {
     environment {
         CI = 'true'
         HOST = '0.0.0.0'
+        NODE_OPTIONS = '--openssl-legacy-provider'
         NETLIFY_AUTH_TOKEN = credentials('netlify-auth-token')
         NETLIFY_SITE_ID = credentials('netlify-site-id')
     }
